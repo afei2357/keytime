@@ -1,0 +1,20 @@
+*.iml
+.gradle/
+.kotlin/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.apks
+
+# 本地私有数据：工作记忆、调试日志、签名材料一律不入库
+.workbuddy/
+*.log
+*.jks
+*.keystore
+keystore.properties

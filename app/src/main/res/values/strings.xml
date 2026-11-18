@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">按键报时</string>
+
+    <!-- 通知 -->
+    <string name="notif_channel_name">服务状态</string>
+    <string name="notif_channel_desc">显示按键报时服务是否正在运行</string>
+    <string name="notif_title">按键报时运行中</string>
+    <string name="notif_text_running">息屏时按音量键即播报当前时间</string>
+    <string name="notif_text_paused">已暂停，按键不再报时</string>
+    <string name="action_pause">暂停</string>
+    <string name="action_resume">恢复</string>
+
+    <!-- 主页 -->
+    <string name="header_subtitle">睡觉不用睁眼：按一下音量键，语音报时。</string>
+    <string name="card_service_title">服务状态</string>
+    <string name="service_status_on">报时服务运行中：息屏状态下按音量键即可报时。</string>
+    <string name="service_status_off">报时服务未运行。点下方按钮启动（无需任何系统授权）。</string>
+    <string name="service_status_degraded">报时服务在运行，但按键接管异常（可能刚被系统重启）。点下方"停止"再"启动"一次即可恢复。</string>
+    <string name="btn_service_enable">启动报时服务</string>
+    <string name="btn_service_stop">停止报时服务</string>
+
+    <string name="card_trigger_title">报时按键</string>
+    <string name="radio_trigger_down">音量下键</string>
+    <string name="radio_trigger_up">音量上键</string>
+    <string name="radio_trigger_both">音量上键 + 下键</string>
+    <string name="trigger_hint">安卓系统不允许第三方应用监听电源键，只能监听音量键。息屏时按下选中的音量键即报时；亮屏时按键保持正常调音量，不会被拦截。按下时屏幕会显示音量条变小，但真实铃声音量保持不变（这是预期行为）。</string>
+
+    <string name="card_play_title">播放</string>
+    <string name="label_paused">暂停报时（服务保持运行）</string>
+    <string name="label_boot_start">开机自动启动报时服务</string>
+    <string name="radio_stream_alarm">闹钟声道（夜间更可靠，默认）</string>
+    <string name="radio_stream_media">媒体声道（跟随媒体音量）</string>
+    <string name="label_announce_volume">报时音量</string>
+    <string name="label_announce_volume_value">当前音量：%1$d%%</string>
+    <string name="label_announce_volume_hint">只调节报时语音的音量，不影响系统的闹钟/媒体音量，也不影响真实闹钟。改动后立即生效。</string>
+    <string name="label_max_volume">使用最大音量（需要较大声音时开启）</string>
+    <string name="btn_test_speak">测试报时</string>
+
+    <!-- 定时自动控制（v3.7.0） -->
+    <string name="card_auto_title">定时自动控制</string>
+    <string name="label_auto_enabled">启用定时自动控制</string>
+    <string name="label_auto_on">自动开启时间</string>
+    <string name="label_auto_off">自动暂停时间</string>
+    <string name="label_auto_time_value">%1$s</string>
+    <string name="label_auto_repeat">重复日期</string>
+    <string name="day_sun">日</string>
+    <string name="day_mon">一</string>
+    <string name="day_tue">二</string>
+    <string name="day_wed">三</string>
+    <string name="day_thu">四</string>
+    <string name="day_fri">五</string>
+    <string name="day_sat">六</string>
+    <string name="label_auto_repeat_everyday">每天</string>
+    <string name="label_auto_repeat_weekdays">工作日</string>
+    <string name="label_auto_summary">当前规则：%1$s</string>
+    <string name="label_auto_next">下次触发：%1$s</string>
+    <string name="label_auto_running_manual">运行状态：手动控制（下次自动事件将接管）</string>
+    <string name="label_auto_running_auto">运行状态：自动控制中</string>
+    <string name="label_auto_running_off">运行状态：自动规则未启用</string>
+    <string name="auto_action_on">开启报时</string>
+    <string name="auto_action_off">暂停报时</string>
+    <string name="auto_next_format">%1$s %2$s</string>
+    <string name="auto_next_today">今天</string>
+    <string name="auto_next_tomorrow">明天</string>
+    <string name="auto_next_weekday">周%1$s</string>
+    <string name="auto_invalid_conflict">开启和暂停时间不能相同，请调整</string>
+    <string name="auto_invalid_no_day">请至少选择一天</string>
+    <string name="auto_saved">定时规则已保存</string>
+    <string name="auto_hint">到点自动切换报时状态。手动暂停/恢复立即生效，并保持到下一次自动事件。跨天场景（如 22:00 开、07:00 关）会自动按次日计算。</string>
+
+    <string-array name="weekday_names">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string name="card_guide_title">使用说明（红米 HyperOS）</string>
+    <string name="guide_text">1. 打开本应用即自动启动报时服务（无需点击按钮），首次会请求通知权限（通知栏可一键暂停/恢复）。\n2. 省电策略设为"无限制"：设置 → 应用设置 → 应用管理 → 按键报时 → 省电策略 → 无限制，并允许"自启动"（HyperOS 杀后台很凶，这两项不设，睡一晚服务可能就没了）。\n3. 打开最近任务，把本应用的卡片"加锁"，防止被一键清理。\n4. 息屏/锁屏状态下按音量键，即可听到"13点51分"式报时。屏幕会亮一下随即熄灭，属正常系统行为，不影响报时。\n\n实现原理（v3.0）：\n· 本应用用前台服务 + MediaSession 接管音量键来感知按键，不申请无障碍权限——HyperOS 会过滤个人应用的无障服务（写入系统开关会被立刻剥离、设置列表里也找不到），故改用此方案，在小米手机上实测可用。\n· 按下音量键时屏幕会显示音量面板变小，但本应用不真正调节系统音量，你的真实铃声音量保持不变（音量条变小只是"按键被会话接管"的演示，无害）。\n· 亮屏时按键保持正常调音量，不会被拦截。\n\n注意事项：\n· 若完全听不到声音：检查闹钟/媒体音量、勿扰模式，以及 设置 → 无障碍 → 文字转语音输出 里是否选了中文语音。\n· 本应用不联网、不读屏幕内容、不申请无障碍权限。</string>
+</resources>

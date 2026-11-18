@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- 时钟表盘 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M22,54 A20,20 0 1,1 62,54 A20,20 0 1,1 22,54"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+    <!-- 时针 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M42,54 L42,42"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+    <!-- 分针 -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M42,54 L51,58"
+        android:strokeColor="#FFD54F"
+        android:strokeLineCap="round"
+        android:strokeWidth="4" />
+    <!-- 声波（近） -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M70,44 A12,12 0 0,1 70,64"
+        android:strokeColor="#FFD54F"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.5" />
+    <!-- 声波（远） -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M78,36 A22,22 0 0,1 78,72"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeWidth="3.5" />
+</vector>

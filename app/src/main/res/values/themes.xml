@@ -1,0 +1,7 @@
+<resources>
+    <!-- 夜间工具类应用，固定深色主题 -->
+    <style name="Theme.KeyTime" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="android:windowBackground">@color/window_bg</item>
+    </style>
+</resources>
